@@ -20,7 +20,7 @@ func HashAndSalt(pass []byte) string  {
 }
 
 func ConnectDB() *gorm.DB {
-	db, err := gorm.Open("postgres", "host=127.0.0.1 port=5432 user=postgres dbname=HumoStore password=3477 sslmode=disable")
+	db, err := gorm.Open("postgres", "host=127.0.0.1 port=5432 user=postgres dbname=HumoStore password=p sslmode=disable")
 	HandleErr(err)
 	return db
 }
